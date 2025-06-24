@@ -1,4 +1,4 @@
 "dependencies": {
   "n8n": "^1.45.0",
-  "n8n-nodes-telegram": "^0.3.1"   // <- keep this or change to new one
+  "n8n-nodes-discord-trigger": "^0.7.0"
 }
