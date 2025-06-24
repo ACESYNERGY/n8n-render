@@ -10,14 +10,9 @@ RUN apt-get update && \
     cmake --build . --target install && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Set library path so Telepilot can find libtdjson.so
 ENV LD_LIBRARY_PATH=/usr/local/lib
 
-# Pre-install Telepilot node globally so it’s baked into container
 RUN n8n install n8n-nodes-telepilot
 
-# Working directory for n8n
 WORKDIR /home/node
-
-# Default startup
 CMD ["n8n"]
