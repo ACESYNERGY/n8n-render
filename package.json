@@ -1,9 +1,4 @@
-{
-  "name": "n8n",
-  "version": "1.0.0",
-  "dependencies": {
-    "n8n": "^1.45.0",
-    "n8n-nodes-telepilot": "^0.10.0",
-    "n8n-nodes-telegram": "^0.3.1"
-  }
+"dependencies": {
+  "n8n": "^1.45.0",
+  "n8n-nodes-telegram": "^0.3.1"   // <- keep this or change to new one
 }
