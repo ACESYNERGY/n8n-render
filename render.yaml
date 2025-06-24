@@ -54,6 +54,15 @@ services:
         value: false
       - key: EXECUTIONS_DATA_SAVE_MANUAL_EXECUTIONS
         value: false
+
+      # 🔥 Add this to whitelist Telepilot node
+      - key: N8N_NODES_INCLUDE
+        value: n8n-nodes-telepilot
+
+      # 🔥 Required so libtdjson.so is visible inside container
+      - key: LD_LIBRARY_PATH
+        value: /usr/local/lib
+
     disk:
       name: n8n-disk
       mountPath: /home/node/.n8n
